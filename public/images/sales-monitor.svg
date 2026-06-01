@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <defs>
+    <linearGradient id="c" x1="76" y1="72" x2="828" y2="556" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1230"/>
+      <stop offset="1" stop-color="#0A0D1A"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" rx="28" fill="url(#c)"/>
+  <rect x="50" y="50" width="800" height="520" rx="24" stroke="#3A3162"/>
+  <rect x="92" y="96" width="290" height="34" rx="10" fill="#C2A4FF" fill-opacity=".14"/>
+  <path d="M118 392 232 306l98 64 136-152 120 96 94-132" stroke="#C2A4FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="232" cy="306" r="12" fill="#F7F4FF"/>
+  <circle cx="466" cy="218" r="12" fill="#F7F4FF"/>
+  <circle cx="680" cy="314" r="12" fill="#F7F4FF"/>
+  <text x="92" y="86" fill="#C2A4FF" font-family="Arial, sans-serif" font-size="20" letter-spacing="3">OPERATIONS DASHBOARD</text>
+  <text x="92" y="474" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="700">SALES MONITORING</text>
+  <text x="92" y="520" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="700">DASHBOARD</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="28" fill="#FAFAF8"/>
+  <text x="34" y="48" fill="#8FD33D" font-family="Arial, sans-serif" font-size="18" font-weight="700">Natural Beauty by :</text>
+  <text x="34" y="92" fill="#8FD33D" font-family="Arial, sans-serif" font-size="54" font-weight="700">GOC</text>
+  <text x="118" y="92" fill="#8FD33D" font-family="Arial, sans-serif" font-size="28" font-weight="700">cosmetics</text>
+  <text x="34" y="164" fill="#182235" font-family="Arial, sans-serif" font-size="28" font-weight="700">Apa itu e-Claim,</text>
+  <text x="34" y="202" fill="#182235" font-family="Arial, sans-serif" font-size="18">Aplikasi yang dibangun oleh PT. Gloria Origita Cosmetics untuk klaim Promosi dari Distributor agar lebih cepat di</text>
+  <text x="34" y="230" fill="#182235" font-family="Arial, sans-serif" font-size="18">proses. Apabila ada kendala silakan menghubungi admin sales kami melalui email : eclaim@goc.co.id.</text>
+  <text x="34" y="286" fill="#182235" font-family="Arial, sans-serif" font-size="30" font-weight="700">Dokumen Persyaratan Klaim Promo</text>
+  <text x="34" y="326" fill="#182235" font-family="Arial, sans-serif" font-size="18">Berikut ini ada dokumen persyaratan yang harus diupload dan di verifikasi menurut type promo PT. Gloria Origita</text>
+  <text x="34" y="354" fill="#182235" font-family="Arial, sans-serif" font-size="18">Cosmetics.</text>
+  <text x="34" y="418" fill="#182235" font-family="Arial, sans-serif" font-size="32" font-weight="700">Dokumen Standard</text>
+  <text x="34" y="450" fill="#8C96A5" font-family="Arial, sans-serif" font-size="17" font-style="italic">File standar yang diharuskan ada untuk proses upload.*</text>
+  <line x1="34" y1="476" x2="526" y2="476" stroke="#D5D8DD"/>
+  <circle cx="38" cy="510" r="4" fill="#182235"/>
+  <circle cx="38" cy="536" r="4" fill="#182235"/>
+  <circle cx="38" cy="562" r="4" fill="#182235"/>
+  <text x="52" y="516" fill="#182235" font-family="Arial, sans-serif" font-size="18">Copy Faktur / Print Out Penjualan</text>
+  <text x="52" y="542" fill="#182235" font-family="Arial, sans-serif" font-size="18">Kwitansi</text>
+  <text x="52" y="568" fill="#182235" font-family="Arial, sans-serif" font-size="18">Faktur Pajak</text>
+  <text x="560" y="180" fill="#182235" font-family="Arial, sans-serif" font-size="40" font-weight="700">Klaim</text>
+  <text x="666" y="180" fill="#8FD33D" font-family="Arial, sans-serif" font-size="40" font-weight="700">Promo</text>
+  <text x="560" y="222" fill="#182235" font-family="Arial, sans-serif" font-size="18">Silahkan lengkapi form dibawah ini bila anda ingin klaim atas</text>
+  <text x="560" y="250" fill="#182235" font-family="Arial, sans-serif" font-size="18">promo PT Gloria Origita Cosmetics.</text>
+  <rect x="560" y="318" width="292" height="56" rx="8" fill="none" stroke="#BFC4CC" stroke-width="2"/>
+  <rect x="560" y="410" width="292" height="56" rx="8" fill="none" stroke="#BFC4CC" stroke-width="2"/>
+  <rect x="560" y="510" width="292" height="54" rx="10" fill="#3E6FB8"/>
+  <text x="592" y="334" fill="#4F5564" font-family="Arial, sans-serif" font-size="14">No. Gobip</text>
+  <text x="592" y="426" fill="#4F5564" font-family="Arial, sans-serif" font-size="14">Masukan Email</text>
+  <text x="592" y="490" fill="#737B88" font-family="Arial, sans-serif" font-size="14">Kode Verifikasi akan dikirim melalui email yang anda ketik di atas.*</text>
+  <text x="706" y="545" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Cek Data</text>
+</svg>

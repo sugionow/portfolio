@@ -1,0 +1,25 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101615" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#081210" stop-opacity=".58"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" rx="28" fill="#4A5A48"/>
+  <rect width="900" height="620" rx="28" fill="url(#overlay)"/>
+  <rect x="82" y="56" width="736" height="508" rx="12" fill="#BFC4BF" fill-opacity=".38"/>
+  <path d="M116 540L318 160L742 198L785 470L620 554L116 540Z" fill="#E5E4E0"/>
+  <path d="M318 160L742 198L628 318L202 290L318 160Z" fill="#F5F3EF"/>
+  <path d="M202 290L628 318L620 554L116 540L202 290Z" fill="#DDDAD6"/>
+  <path d="M618 340L748 242L794 466L620 554L618 340Z" fill="#CFCCC8"/>
+  <rect x="0" y="0" width="900" height="620" rx="28" fill="#000000" fill-opacity=".34"/>
+  <text x="450" y="210" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="54" font-weight="700">Selamat datang di e-retur</text>
+  <text x="450" y="274" text-anchor="middle" fill="#F4F4F4" font-family="Arial, sans-serif" font-size="23">Platform untuk mengelola proses retur distributor seperti pengajuan retur,</text>
+  <text x="450" y="308" text-anchor="middle" fill="#F4F4F4" font-family="Arial, sans-serif" font-size="23">tracking, serta riwayat pengajuan retur distributor</text>
+  <rect x="284" y="380" width="118" height="56" rx="10" fill="#F59A11"/>
+  <rect x="420" y="380" width="118" height="56" rx="10" fill="#F59A11"/>
+  <rect x="556" y="380" width="118" height="56" rx="10" fill="#F59A11"/>
+  <text x="343" y="416" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Pengajuan</text>
+  <text x="479" y="416" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Tracking</text>
+  <text x="615" y="416" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">History</text>
+</svg>
