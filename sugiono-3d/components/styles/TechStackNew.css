@@ -90,14 +90,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 /* Each Row */
 .techstack-row {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -107,10 +107,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 68px;
-  padding: 8px;
-  border-radius: 10px;
+  width: 72px;
+  height: 88px;
+  padding: 10px 8px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
@@ -128,8 +128,8 @@
 }
 
 .techstack-item img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   filter: grayscale(100%) contrast(1.2) brightness(1.5);
   opacity: 0.85;
@@ -142,14 +142,14 @@
 }
 
 .techstack-item span {
-  font-size: 9px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.7);
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 50px;
+  max-width: 64px;
 }
 
 .techstack-item:hover span {
@@ -163,17 +163,18 @@
   }
   
   .techstack-item {
-    width: 50px;
-    height: 62px;
+    width: 68px;
+    height: 84px;
   }
   
   .techstack-item img {
-    width: 26px;
-    height: 26px;
+    width: 38px;
+    height: 38px;
   }
   
   .techstack-item span {
-    font-size: 8px;
+    font-size: 10px;
+    max-width: 60px;
   }
 }
 
@@ -184,27 +185,27 @@
   }
   
   .techstack-pyramid {
-    gap: 8px;
+    gap: 12px;
   }
   
   .techstack-row {
-    gap: 8px;
+    gap: 12px;
   }
   
   .techstack-item {
-    width: 45px;
-    height: 56px;
-    padding: 6px;
+    width: 62px;
+    height: 78px;
+    padding: 8px 6px;
   }
   
   .techstack-item img {
-    width: 22px;
-    height: 22px;
+    width: 34px;
+    height: 34px;
   }
   
   .techstack-item span {
-    font-size: 7px;
-    max-width: 42px;
+    font-size: 9px;
+    max-width: 54px;
   }
 }
 
@@ -214,28 +215,28 @@
   }
   
   .techstack-pyramid {
-    gap: 6px;
+    gap: 10px;
   }
   
   .techstack-row {
-    gap: 6px;
+    gap: 10px;
   }
   
   .techstack-item {
-    width: 40px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 8px;
+    width: 56px;
+    height: 70px;
+    padding: 7px 5px;
+    border-radius: 12px;
   }
   
   .techstack-item img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
   
   .techstack-item span {
-    font-size: 6px;
-    max-width: 38px;
-    margin-top: 3px;
+    font-size: 8px;
+    max-width: 48px;
+    margin-top: 6px;
   }
 }

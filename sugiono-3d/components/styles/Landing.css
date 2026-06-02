@@ -3,25 +3,34 @@
   display: none;
 }
 
+.landing-mobile-typed {
+  display: none;
+}
+
 /* Remove mobile photo and ensure 3D character is always hidden on mobile */
 @media only screen and (max-width: 768px) {
   .character-model {
     display: none !important;
   }
 
-  .landing-section,
+  .landing-section {
+    min-height: auto;
+    padding-top: 84px;
+    padding-bottom: 36px;
+  }
+
   .landing-container {
     height: auto !important;
-    min-height: 100vh;
+    min-height: auto;
     max-width: 100vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
-    padding-bottom: 40px;
+    align-items: center;
+    gap: 20px;
+    padding: 0 4px;
   }
 
-  /* Fix spacing between name and subtitle */
   .landing-intro {
     position: relative !important;
     top: auto !important;
@@ -29,129 +38,173 @@
     right: auto !important;
     bottom: auto !important;
     transform: none !important;
-    padding-top: 40px;
-    /* Shift higher up */
-    margin-bottom: 20px;
+    padding-top: 0;
+    margin-bottom: 0;
     z-index: 10;
     text-align: center;
     width: 100% !important;
     order: 1;
-    /* First: Name */
     height: auto !important;
+  }
+
+  .landing-intro h2 {
+    font-size: 15px;
+    letter-spacing: 1.6px;
+    margin-bottom: 10px;
   }
 
   .landing-intro h1 {
-    word-spacing: 0.1em;
-    font-size: 32px !important;
-    /* Ensure nice size */
-    line-height: 1.2 !important;
+    word-spacing: 0.08em;
+    font-size: clamp(34px, 11vw, 48px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: 1.6px;
     margin: 0;
   }
 
-  /* Ensure name parts display correctly */
   .landing-intro h1 br {
     display: block;
-    /* Keep break on mobile for 2 lines, or use display:none for 1 line */
-    content: " ";
-    /* Fallback */
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 
-  /* Subtitles Container */
   .landing-info {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    text-align: center;
-    margin-top: 20px;
-    /* Space between name and subtitles */
-    z-index: 10;
-    background: transparent;
-    padding-bottom: 50px;
-    /* Add bottom padding for scroll space */
+    display: none;
+  }
+
+  .landing-mobile-typed {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    height: auto !important;
-    /* Force auto height */
-    width: 100% !important;
+    width: 100%;
+    max-width: 420px;
     order: 3;
-    /* Third: Subtitles */
-  }
-
-  .landing-info h3 {
+    gap: 8px;
+    padding: 0 10px;
     text-align: center;
-    display: none;
-    /* Hide 'An' if not needed, or keep it static */
+    z-index: 10;
   }
 
-  /* Force static positioning to prevent overlaps */
-  .landing-info h2,
-  h2.landing-info-h2,
-  .landing-h2-1,
-  .landing-h2-info {
-    position: static !important;
-    display: block;
-    width: auto;
-    margin: 0 !important;
-    font-size: 20px !important;
-    line-height: 1.5 !important;
-    white-space: normal;
-    text-align: center;
-    height: auto !important;
-    transform: none !important;
-    /* Remove any transforms */
+  .landing-mobile-typed-label {
+    font-size: 11px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.48);
   }
 
-  /* Specific styling for the distinct parts */
-  .landing-h2-1 {
-    font-size: 24px !important;
-    color: var(--accentColor);
+  .landing-mobile-typed-line {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: clamp(20px, 6.2vw, 28px);
+    line-height: 1.2;
     font-weight: 700;
+    color: var(--accentColor);
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 28px rgba(99, 230, 190, 0.18);
   }
 
-  .landing-h2-info {
-    font-size: 18px !important;
-    color: rgba(255, 255, 255, 0.9);
+  .landing-mobile-typed-line span {
+    min-width: 1ch;
   }
 
-  .landing-info-h2::after {
-    display: none;
-  }
-
-  .landing-copy {
-    margin: 8px 0 0 0;
-    max-width: 340px;
-    text-align: center;
+  .landing-mobile-copy {
+    margin: 2px 0 0;
+    max-width: 360px;
     font-size: 14px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.76);
   }
 
-  /* Show mobile photo */
+  .landing-mobile-caret {
+    width: 2px;
+    height: 1.1em;
+    background: currentColor;
+    display: inline-block;
+    border-radius: 999px;
+    animation: mobileCaretBlink 0.9s steps(1) infinite;
+  }
+
   .mobile-photo {
     display: block;
     position: relative !important;
     width: 100%;
-    max-width: 380px;
+    max-width: 320px;
     margin: 0 auto;
-    z-index: 1;
     order: 2;
-    /* Second: Photo */
-    /* Add fade mask to bottom */
-    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    pointer-events: none;
+    z-index: 2;
     transform: none !important;
   }
 
-  .mobile-photo img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 0 40px rgba(99, 230, 190, 0.28));
+.mobile-photo-frame {
+  --glow-x: 50%;
+  --glow-y: 50%;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 28px;
+  overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    radial-gradient(circle at top, rgba(99, 230, 190, 0.22), transparent 55%),
+    linear-gradient(180deg, rgba(10, 22, 19, 0.8), rgba(4, 10, 9, 0.96));
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.45),
+    0 0 40px rgba(88, 216, 195, 0.12);
+  transform-style: preserve-3d;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  will-change: transform;
+  cursor: grab;
+}
+
+.mobile-photo-frame.is-active {
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.5),
+    0 0 55px rgba(88, 216, 195, 0.22);
+}
+
+.mobile-photo-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at var(--glow-x) var(--glow-y),
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.08) 18%,
+      transparent 42%);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+  transform: translateZ(40px);
+}
+
+.mobile-photo-frame::after {
+  content: "";
+  position: absolute;
+    inset: auto 0 0;
+    height: 30%;
+    background: linear-gradient(to top, rgba(7, 17, 15, 0.88), transparent);
+  }
+
+.mobile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transform: translateZ(26px) scale(1.03);
+}
+}
+
+@keyframes mobileCaretBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
   }
 }
 
