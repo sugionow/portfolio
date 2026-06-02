@@ -8,6 +8,10 @@ Live site: [https://sugiono.my.id](https://sugiono.my.id)
 
 This project is a personal portfolio built with Next.js, React, and a custom 3D presentation layer. It highlights Sugiono's background, selected work, tech stack, and contact information in a more interactive format.
 
+## Preview
+
+![Sugiono Portfolio Preview](public/preview.png)
+
 The site presents:
 
 - developer profile and role highlights
