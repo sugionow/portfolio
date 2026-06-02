@@ -3,6 +3,10 @@
   display: none;
 }
 
+.landing-mobile-typed {
+  display: none;
+}
+
 /* Remove mobile photo and ensure 3D character is always hidden on mobile */
 @media only screen and (max-width: 768px) {
   .character-model {
@@ -63,95 +67,62 @@
   }
 
   .landing-info {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    text-align: center;
-    margin-top: 0;
-    z-index: 10;
-    background: transparent;
-    padding: 0 10px;
+    display: none;
+  }
+
+  .landing-mobile-typed {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    height: auto !important;
-    width: 100% !important;
+    width: 100%;
     max-width: 420px;
     order: 3;
-  }
-
-  .landing-info h3 {
+    gap: 8px;
+    padding: 0 10px;
     text-align: center;
-    display: none;
+    z-index: 10;
   }
 
-  .landing-info h2,
-  h2.landing-info-h2,
-  .landing-h2-1,
-  .landing-h2-2,
-  .landing-h2-info,
-  .landing-h2-info-1 {
-    position: static !important;
-    display: block;
-    width: auto !important;
-    margin: 0 !important;
-    font-size: 20px !important;
-    line-height: 1.35 !important;
-    white-space: normal;
-    text-align: center;
-    height: auto !important;
-    transform: none !important;
+  .landing-mobile-typed-label {
+    font-size: 11px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.48);
   }
 
-  .landing-info h2 {
-    min-height: 0;
-    margin-left: 0 !important;
-  }
-
-  h2.landing-info-h2 {
-    width: 100% !important;
-    font-size: 24px !important;
-    color: var(--accentStrong);
-  }
-
-  .landing-h2-1 {
-    font-size: 24px !important;
-    color: var(--accentColor);
+  .landing-mobile-typed-line {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: clamp(20px, 6.2vw, 28px);
+    line-height: 1.2;
     font-weight: 700;
+    color: var(--accentColor);
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 28px rgba(99, 230, 190, 0.18);
   }
 
-  .landing-h2-2 {
-    font-size: 20px !important;
-    color: rgba(255, 255, 255, 0.92);
-    font-weight: 600;
+  .landing-mobile-typed-line span {
+    min-width: 1ch;
   }
 
-  .landing-h2-info {
-    font-size: 18px !important;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  .landing-h2-info-1 {
-    font-size: 16px !important;
-    color: rgba(255, 255, 255, 0.72);
-    font-weight: 400;
-  }
-
-  .landing-info-h2::after {
-    display: none;
-  }
-
-  .landing-copy {
-    margin: 6px 0 0 0;
-    max-width: 100%;
-    text-align: center;
+  .landing-mobile-copy {
+    margin: 2px 0 0;
+    max-width: 360px;
     font-size: 14px;
     line-height: 1.75;
     color: rgba(255, 255, 255, 0.76);
+  }
+
+  .landing-mobile-caret {
+    width: 2px;
+    height: 1.1em;
+    background: currentColor;
+    display: inline-block;
+    border-radius: 999px;
+    animation: mobileCaretBlink 0.9s steps(1) infinite;
   }
 
   .mobile-photo {
@@ -194,6 +165,18 @@
     object-fit: cover;
     object-position: center 20%;
     display: block;
+  }
+}
+
+@keyframes mobileCaretBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
   }
 }
 

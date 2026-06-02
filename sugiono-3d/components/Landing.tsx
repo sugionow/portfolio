@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import "./styles/Landing.css";
 import { config } from "../config";
 
@@ -6,6 +6,46 @@ const Landing = ({ children }: PropsWithChildren) => {
   const nameParts = config.developer.fullName.split(" ");
   const firstName = nameParts[0] || config.developer.name;
   const lastName = nameParts.slice(1).join(" ") || "";
+  const mobileRoles = [
+    config.developer.title,
+    config.developer.secondaryTitle,
+    config.developer.tertiaryTitle,
+    config.developer.quaternaryTitle,
+  ];
+  const [activeRoleIndex, setActiveRoleIndex] = useState(0);
+  const [typedRole, setTypedRole] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = mobileRoles[activeRoleIndex] ?? "";
+    const typingSpeed = isDeleting ? 45 : 85;
+    const isWordComplete = typedRole === currentRole;
+    const isWordEmpty = typedRole.length === 0;
+
+    const timeout = window.setTimeout(() => {
+      if (!isDeleting) {
+        if (isWordComplete) {
+          setIsDeleting(true);
+          return;
+        }
+
+        setTypedRole(currentRole.slice(0, typedRole.length + 1));
+        return;
+      }
+
+      if (!isWordEmpty) {
+        setTypedRole(currentRole.slice(0, typedRole.length - 1));
+        return;
+      }
+
+      setIsDeleting(false);
+      setActiveRoleIndex((prev) => (prev + 1) % mobileRoles.length);
+    }, isWordComplete && !isDeleting ? 1400 : typingSpeed);
+
+    return () => {
+      window.clearTimeout(timeout);
+    };
+  }, [activeRoleIndex, isDeleting, mobileRoles, typedRole]);
 
   return (
     <>
@@ -39,6 +79,14 @@ const Landing = ({ children }: PropsWithChildren) => {
                 alt={config.developer.fullName}
               />
             </div>
+          </div>
+          <div className="landing-mobile-typed" aria-label="Current role">
+            <div className="landing-mobile-typed-label">Specializing in</div>
+            <div className="landing-mobile-typed-line">
+              <span>{typedRole}</span>
+              <i className="landing-mobile-caret" aria-hidden="true"></i>
+            </div>
+            <p className="landing-mobile-copy">{config.developer.shortDescription}</p>
           </div>
         </div>
         {children}
