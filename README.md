@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sugiono Portfolio
 
-## Getting Started
+Portfolio website for Sugiono, a backend web developer focused on enterprise systems, REST APIs, and operational web applications.
 
-First, run the development server:
+Live site: [https://sugiono.my.id](https://sugiono.my.id)
+
+## Overview
+
+This project is a personal portfolio built with Next.js, React, and a custom 3D presentation layer. It highlights Sugiono's background, selected work, tech stack, and contact information in a more interactive format.
+
+The site presents:
+
+- developer profile and role highlights
+- interactive landing section with mobile-specific profile card behavior
+- About Me, experience, and project showcase
+- tech stack section with responsive card layout
+- direct links to GitHub, LinkedIn, email, and resume
+
+## Profile
+
+- Name: Sugiono
+- Role: Backend Web Developer
+- Secondary focus: Laravel Developer
+- Website: [https://sugiono.my.id](https://sugiono.my.id)
+- GitHub: [https://github.com/sugionow](https://github.com/sugionow)
+- LinkedIn: [https://linkedin.com/in/sugiono-gio-b92b2617b](https://linkedin.com/in/sugiono-gio-b92b2617b)
+- Email: [soegiono1998@gmail.com](mailto:soegiono1998@gmail.com)
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- GSAP
+- Lenis
+- Three.js
+- Framer Motion
+
+## Featured Work
+
+- GOC Career Portal
+  Recruitment platform for vacancies, candidate pipelines, and hiring workflows.
+- e-Retur Distributor System
+  Return workflow platform for distributor submission, tracking, and history.
+- e-Claim Promo Portal
+  Claim submission system with validation and document-based workflow.
+- IT Asset Management System
+  Internal system for tracking and reporting company assets.
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build the project:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Lint the project:
 
-## Deploy on Vercel
+```bash
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+app/                    Next.js app router entry
+components/             top-level client shell
+public/                 static assets, resume, images, video, 3D assets
+sugiono-3d/             portfolio sections, styles, animation, 3D logic
+```
+
+## Deployment
+
+This portfolio is intended to be deployed to Sugiono's public domain:
+
+- Production URL: [https://sugiono.my.id](https://sugiono.my.id)
+
+If you deploy using a platform such as Vercel, make sure the production branch points to `main` and the custom domain is connected to `sugiono.my.id`.
