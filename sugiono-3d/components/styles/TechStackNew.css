@@ -215,50 +215,56 @@
   }
   
   .techstack-pyramid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 12px;
+    max-width: 332px;
+    margin: 0 auto;
   }
   
   .techstack-row {
-    gap: 12px;
+    display: contents;
   }
   
   .techstack-item {
-    width: 68px;
-    height: 84px;
-    padding: 9px 6px;
+    width: 100%;
+    height: 88px;
+    min-width: 0;
+    padding: 10px 6px;
     border-radius: 14px;
   }
   
   .techstack-item img {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
   }
   
   .techstack-item span {
     font-size: 10px;
-    max-width: 58px;
+    max-width: 100%;
     margin-top: 6px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .techstack-row {
+  .techstack-pyramid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 280px;
     gap: 10px;
   }
 
   .techstack-item {
-    width: 62px;
-    height: 78px;
-    padding: 8px 5px;
+    height: 84px;
+    padding: 9px 5px;
   }
 
   .techstack-item img {
-    width: 34px;
-    height: 34px;
+    width: 38px;
+    height: 38px;
   }
 
   .techstack-item span {
     font-size: 9px;
-    max-width: 52px;
+    max-width: 100%;
   }
 }
