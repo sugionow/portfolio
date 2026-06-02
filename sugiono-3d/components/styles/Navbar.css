@@ -12,6 +12,7 @@
   top: 0;
   z-index: 9999;
 }
+
 .header ul {
   font-size: 11px;
   display: flex;
@@ -45,6 +46,35 @@
   font-size: 13px;
   letter-spacing: 0.2px;
 }
+
+@media only screen and (max-width: 499px) {
+  .header {
+    width: calc(100% - 24px);
+    padding: 14px 0;
+    align-items: center;
+  }
+
+  .header ul {
+    flex-direction: row;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(7, 17, 15, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .header ul li {
+    font-size: 10px;
+    letter-spacing: 0.7px;
+  }
+
+  .navbar-title {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;

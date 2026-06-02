@@ -33,7 +33,12 @@ const Landing = ({ children }: PropsWithChildren) => {
             <p className="landing-copy">{config.developer.shortDescription}</p>
           </div>
           <div className="mobile-photo">
-            <img src="/images/sugiono-mobile.svg" alt={config.developer.fullName} />
+            <div className="mobile-photo-frame">
+              <img
+                src="/images/sugiono-profile-mobile.jpeg"
+                alt={config.developer.fullName}
+              />
+            </div>
           </div>
         </div>
         {children}
